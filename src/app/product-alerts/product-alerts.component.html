@@ -1,0 +1,14 @@
+
+
+<p *ngIf="product.price>700 || product.price<700">
+   
+    <button (click)="notify.emit()">
+        Notify me 
+    </button>
+
+
+</p>
+<p *ngIf="product.price>700">
+    This product is not on sale
+
+</p>
